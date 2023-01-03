@@ -6,10 +6,11 @@ dict = {'AX': 1+3, "AY": 2+6, "AZ": 3+0,
         'CX': 1+6, "CY": 2+0, "CZ": 3+3, }
 
 
-with open("test.txt") as f:
+with open("input.txt") as f:
     for line in f:
         buf = line.replace(" ", "")
-        buf = line.replace("\n", "")
+        buf = buf.replace("\n", "")
+        count += dict[buf]
 
 
-# print(count)
+print(count)
