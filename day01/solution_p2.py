@@ -9,6 +9,8 @@ with open("input.txt") as f:
         else:
             sum += int(line)
 
+f.close()
+
 list.sort(reverse=True)
 # print(list)
 print(list[0]+list[1]+list[2])

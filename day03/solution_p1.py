@@ -1,8 +1,8 @@
 def match(comp1, comp2):
-    for i in range(len(comp1)):
-        for j in range(len(comp2)):
-            if (comp1[i] == comp2[j]):
-                return dict[comp1[i]]
+    for i in comp1:
+        for j in comp2:
+            if (i == j):
+                return dict[i]
     return 0
 
 
@@ -19,5 +19,7 @@ with open('input.txt') as f:
         comp1 = line[:(len(line)//2)]
         comp2 = line[(len(line)//2):]
         count += match(comp1, comp2)
+
+f.close()
 
 print(count)

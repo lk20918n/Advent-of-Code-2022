@@ -12,5 +12,6 @@ with open("input.txt") as f:
         buf = buf.replace("\n", "")
         count += dict[buf]
 
+f.close()
 
 print(count)

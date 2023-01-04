@@ -11,6 +11,8 @@ with open("input.txt") as f:
             cur += int(line)
             # print("cur is now: " + str(cur))
 
+f.close()
+
 print(max)
 
 # Space: O(1), Time O(n)
