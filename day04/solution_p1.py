@@ -32,10 +32,7 @@ def parse_Overlaps(buffer):
     return False
 
 
-# f = open('test.txt','r')
-# buf = f.read().split('\n')
-# # buf = parse(buf)
-# print(buf)
+
 
 count1 = 0
 count2 = 0
